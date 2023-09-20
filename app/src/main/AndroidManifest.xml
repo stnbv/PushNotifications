@@ -40,7 +40,7 @@
             android:resource="@mipmap/ic_launcher" />
         <meta-data
             android:name="com.google.firebase.messaging.default_notification_color"
-            android:resource="@color/design_default_color_background" />
+            android:resource="@color/pink" />
     </application>
 
 </manifest>

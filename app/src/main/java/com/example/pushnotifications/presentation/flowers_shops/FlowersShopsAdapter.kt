@@ -30,7 +30,7 @@ class FlowersShopsAdapter(private val data: List<FlowerShopModel>, private val o
     override fun onBindViewHolder(viewHolder: ViewHolder, position: Int) {
         Glide.with(viewHolder.binding.root)
             .load(data[position].image)
-            .placeholder(R.color.purple)
+            .placeholder(R.color.pink)
             .into(viewHolder.flowerImageView)
         viewHolder.titleTextView.text = data[position].shopName
     }
