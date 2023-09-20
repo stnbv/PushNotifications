@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <data>
+
+        <variable
+            name="vm"
+            type="com.example.pushnotifications.presentation.device_info.DeviceInfoViewModel" />
+    </data>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_margin="20dp"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/udidTextView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginHorizontal="20dp"
+            android:layout_marginBottom="20dp"
+            android:text="@{@string/udid(vm.udid)}"
+            android:textSize="20dp"
+            tools:text="Random fact" />
+
+        <TextView
+            android:id="@+id/fcmTokenTextView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@{@string/fcm_token(vm.fcmToken)}"
+            android:layout_marginHorizontal="20dp"
+            android:textSize="20dp"
+            tools:text="Random fact" />
+
+    </LinearLayout>
+</layout>

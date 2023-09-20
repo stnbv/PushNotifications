@@ -1,0 +1,75 @@
+plugins {
+    id 'com.android.application'
+    id 'org.jetbrains.kotlin.android'
+    id 'kotlin-parcelize'
+    id 'androidx.navigation.safeargs.kotlin'
+    id 'com.google.gms.google-services'
+}
+
+android {
+    namespace 'com.example.pushnotifications'
+    compileSdk 34
+
+    defaultConfig {
+        applicationId "com.example.pushnotifications"
+        minSdk 26
+        targetSdk 34
+        versionCode 1
+        versionName "1.0"
+    }
+
+    buildTypes {
+        release {
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android-optimize.txt'), 'proguard-rules.pro'
+        }
+    }
+
+    buildFeatures {
+        dataBinding = true
+        viewBinding = true
+    }
+
+    compileOptions {
+        sourceCompatibility JavaVersion.VERSION_1_8
+        targetCompatibility JavaVersion.VERSION_1_8
+    }
+    kotlinOptions {
+        jvmTarget = '1.8'
+    }
+}
+
+dependencies {
+
+    implementation libs.core.ktx
+    implementation libs.appcompat
+    implementation libs.material
+    implementation libs.constraintlayout
+
+    //fragment
+    implementation libs.fragment
+
+    //navigation
+    implementation libs.navigation.fragment
+    implementation libs.navigation.ui
+
+    //Retrofit, Okhttp3 and GSON
+    implementation libs.retrofit
+    implementation libs.retrofit.gson
+    implementation libs.retrofit.scalars
+    implementation libs.okhttp
+    implementation libs.okhttp.interceptor
+    implementation libs.gson
+
+    //di koin
+    implementation libs.koin
+
+    //Firebase push
+    implementation libs.firebase
+
+    //Fow show images from link
+    implementation libs.glide
+
+    //Хранение пары ключ-значение
+    implementation libs.datastore.preferences
+}

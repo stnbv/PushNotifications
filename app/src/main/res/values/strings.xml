@@ -1,0 +1,14 @@
+<resources>
+    <string name="app_name">PushNotifications</string>
+    <string name="flowers_price">Цена: %d</string>
+    <string name="flowers_delivery_price">Цена доставки: %d</string>
+    <string name="flowers_shops">Магазины цветов</string>
+
+    <string name="udid">udid: %s</string>
+    <string name="fcm_token">fcm token: %s</string>
+    <string name="copy">Скопировано</string>
+
+    <string name="login">Login</string>
+    <string name="password">Password</string>
+    <string name="email">Email</string>
+</resources>

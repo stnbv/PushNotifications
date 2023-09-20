@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="black">#FF000000</color>
+    <color name="white">#FFFFFFFF</color>
+    <color name="green">#25E52D</color>
+    <color name="yellow">#FFEB3B</color>
+    <color name="blue">#0089FF</color>
+    <color name="pink">#FF3091</color>
+    <color name="orange">#FF9800</color>
+    <color name="purple">#673AB7</color>
+    <color name="electric">#0C00B7</color>
+    <color name="cian">#00B8D8</color>
+    <color name="ruby">#861022</color>
+</resources>

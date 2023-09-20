@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources xmlns:tools="http://schemas.android.com/tools" tools:ignore="SpUsage">
+    <style name="ShapeAppearanceOverlay.App.CornerSize10dp" parent="">
+        <item name="cornerSize">6dp</item>
+        <item name="cornerFamily">rounded</item>
+    </style>
+</resources>

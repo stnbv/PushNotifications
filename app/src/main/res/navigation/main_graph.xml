@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main_graph"
+    app:startDestination="@id/loginFragment">
+
+    <fragment
+        android:id="@+id/loginFragment"
+        android:name="com.example.pushnotifications.presentation.auth.LoginFragment"
+        android:label="LoginFragment">
+
+        <action
+            android:id="@+id/action_loginFragment_to_flowersShopFragment"
+            app:destination="@id/flowersShopFragment" />
+        <action
+            android:id="@+id/action_loginFragment_to_flowersInfoFragment"
+            app:destination="@id/flowersInfoFragment" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/flowersInfoFragment"
+        android:name="com.example.pushnotifications.presentation.flowers_info.screen.FlowersInfoFragment"
+        android:label="MainFragment">
+
+        <argument
+            android:name="id"
+            android:defaultValue="@null"
+            app:argType="string"
+            app:nullable="true" />
+
+        <action
+            android:id="@+id/action_flowersInfoFragment_to_flowersInfoDialogFragment"
+            app:destination="@id/flowersInfoDialogFragment" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/flowersShopFragment"
+        android:name="com.example.pushnotifications.presentation.flowers_shops.FlowersShopFragment"
+        android:label="FlowersShopFragment">
+        <action
+            android:id="@+id/action_flowersShopFragment_to_mainFragment"
+            app:destination="@id/flowersInfoFragment" />
+        <action
+            android:id="@+id/action_flowersShopFragment_to_deviceInfoFragment"
+            app:destination="@id/deviceInfoFragment" />
+    </fragment>
+
+    <dialog
+        android:id="@+id/flowersInfoDialogFragment"
+        android:name="com.example.pushnotifications.presentation.flowers_info.dialog.FlowersInfoDialogFragment"
+        android:label="FlowersInfoDialogFragment">
+
+        <argument
+            android:name="id"
+            android:defaultValue="@null"
+            app:argType="string"
+            app:nullable="true" />
+    </dialog>
+
+    <fragment
+        android:id="@+id/deviceInfoFragment"
+        android:name="com.example.pushnotifications.presentation.device_info.DeviceInfoFragment"
+        android:label="DeviceInfoFragment" />
+
+</navigation>

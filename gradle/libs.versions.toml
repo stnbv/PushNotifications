@@ -1,0 +1,33 @@
+[versions]
+androidCore = "1.8.0"
+appCompat = "1.6.1"
+material = "1.5.0"
+constraintlayout = "2.1.4"
+fragment = "1.6.1"
+navigation = "2.7.2"
+retrofit = "2.9.0"
+okhttp3 = "3.10.0"
+gson = "2.9.0"
+koin = "3.5.0"
+firebase = "23.2.1"
+glide = "4.16.0"
+datastore = "1.0.0"
+
+[libraries]
+core-ktx = { group = "androidx.core", name = "core-ktx", version.ref = "androidCore" }
+appcompat = { group = "androidx.appcompat", name = "appcompat", version.ref = "appCompat" }
+material = { group = "com.google.android.material", name = "material", version.ref = "material" }
+constraintlayout = { group = "androidx.constraintlayout", name = "constraintlayout", version.ref = "constraintlayout" }
+fragment = { group = "androidx.fragment", name = "fragment-ktx", version.ref = "fragment" }
+navigation-fragment= { group = "androidx.navigation", name = "navigation-fragment-ktx", version.ref = "navigation" }
+navigation-ui = { group = "androidx.navigation", name = "navigation-ui-ktx", version.ref = "navigation" }
+retrofit = { group = "com.squareup.retrofit2", name = "retrofit", version.ref = "retrofit" }
+retrofit-gson = { group = "com.squareup.retrofit2", name = "converter-gson", version.ref = "retrofit" }
+retrofit-scalars = { group = "com.squareup.retrofit2", name = "converter-scalars", version.ref = "retrofit" }
+okhttp = { group = "com.squareup.okhttp3", name = "okhttp", version.ref = "okhttp3" }
+okhttp-interceptor = { group = "com.squareup.okhttp3", name = "logging-interceptor", version.ref = "okhttp3" }
+gson = { group = "com.google.code.gson", name = "gson", version.ref = "gson" }
+koin = { group = "io.insert-koin", name = "koin-android", version.ref = "koin" }
+firebase = { group = "com.google.firebase", name = "firebase-messaging-ktx", version.ref = "firebase" }
+glide = { group = "com.github.bumptech.glide", name = "glide", version.ref = "glide" }
+datastore-preferences = { group = "androidx.datastore", name = "datastore-preferences", version.ref = "datastore" }
